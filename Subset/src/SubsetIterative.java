@@ -5,7 +5,6 @@ public class SubsetIterative<T> {
     private List<List<T>> findSubset(ArrayList<T> values) {
         List<List<T>> subsets = new ArrayList<>();
         subsets.add(new ArrayList<>());
-        int n = values.size();
         for(T value: values) {
             List<List<T>> newsubsets = new ArrayList<>();
             for (List<T> subset: subsets) {
@@ -23,7 +22,7 @@ public class SubsetIterative<T> {
         nums.add("A");
         nums.add("B");
         nums.add("C");
-        SubsetIterative iterative = new SubsetIterative();
+        SubsetIterative<String> iterative = new SubsetIterative<>();
         System.out.println(iterative.findSubset(nums));
     }
 }

@@ -7,7 +7,7 @@ public class SubsetRecursive<T> {
         for (int i = index; i < values.size(); i++) {
             current.add(values.get(i));
             backTrack(i+1, current, values,subsets);
-            current.remove(current.size() - 1);
+            current.removeLast();
         }
     }
 
@@ -19,7 +19,7 @@ public class SubsetRecursive<T> {
         int index = 0;
         List<List<String>> subsets = new ArrayList<>();
         List<String> current = new ArrayList<>();
-        SubsetRecursive subSet = new SubsetRecursive();
+        SubsetRecursive<String> subSet = new SubsetRecursive<>();
         subSet.backTrack(index, current, nums, subsets);
         System.out.println(subsets);
     }

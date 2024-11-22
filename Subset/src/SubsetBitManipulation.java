@@ -25,7 +25,7 @@ public class SubsetBitManipulation<T> {
         nums.add("A");
         nums.add("B");
         nums.add("C");
-        SubsetBitManipulation subSet = new SubsetBitManipulation();
+        SubsetBitManipulation<String> subSet = new SubsetBitManipulation<>();
         System.out.println(subSet.findSubset(nums));
     }
 }
