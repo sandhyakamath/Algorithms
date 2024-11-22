@@ -1,4 +1,4 @@
-Problem Type: Subset Generation (Power Set Problem)
+Problem Type: Subset Generation (Power Set Problem)<br>
 Algorithm Type: Combinatorial Enumeration
 Applications:
 Solving problems in set theory, optimization, or search.
